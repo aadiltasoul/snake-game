@@ -13,6 +13,7 @@ public class SnakeMovement : MonoBehaviour
     void Update()
     {
         // Get input for direction
+        //@todo Refactor and use switch case 
         if (Input.GetKeyDown(KeyCode.UpArrow) && direction != Vector2.down)
         {
             direction = Vector2.up;
